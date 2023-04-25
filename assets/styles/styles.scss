@@ -65,67 +65,98 @@ article {
         font-weight: 400;
         color: $grayishBlue;
     }
-}
 
-// Cards wrapper
-.cards {
-    display: flex;
-    flex-direction: column;
-    margin-top: 55px;
-
-    // Middle cards wrapper
-    // &__middle {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
-}
-
-// Cards border color
-.supervisor {
-    border-top: $borderWidth solid $cyan;
-}
-
-.teambuilder {
-    border-top: $borderWidth solid $red;
-}
-
-.karma {
-    border-top: $borderWidth solid $orange;
-}
-
-.calculator {
-    border-top: $borderWidth solid $blue;
-}
-
-// Card
-.card {
-    position: relative;
-    height: 220px;
-    margin-top: 25px;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px $grayishBlue;
-
-    &__title {
-        font-weight: 600;
-        font-size: 20px;
-        color: $veryDarkBlue;
+    // Cards wrapper
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 55px;
     }
 
-    &__text {
-        margin-top: 3px;
-        font-size: 13px;
-        color: $grayishBlue;
+    // Cards border color
+    .supervisor {
+        border-top: $borderWidth solid $cyan;
     }
 
-    &__img {
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-        width: 58px;
-        height: 58px;
+    .teambuilder {
+        border-top: $borderWidth solid $red;
+    }
+
+    .karma {
+        border-top: $borderWidth solid $orange;
+    }
+
+    .calculator {
+        border-top: $borderWidth solid $blue;
+    }
+
+    // Card
+    .card {
+        position: relative;
+        width: 335px;
+        height: 220px;
+        margin-top: 25px;
+        padding: 25px;
+        border-radius: 5px;
+        box-shadow: 0 0 20px 4px lighten($blue, 28);
+
+        &__title {
+            font-weight: 600;
+            font-size: 20px;
+            color: $veryDarkBlue;
+        }
+
+        &__text {
+            margin-top: 3px;
+            font-size: 13px;
+            color: $grayishBlue;
+        }
+
+        &__img {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 58px;
+            height: 58px;
+        }
     }
 }
+
+
 
 // DESKTOP
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 35px;
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+
+        h3 {
+            width: 600px;
+            font-size: 16px;
+        }
+
+        // Card
+        .card {
+            width: 350px;
+            height: 250px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        // Cards wrapper
+        .cards {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
