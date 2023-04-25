@@ -89,6 +89,7 @@ article {
 
     .calculator {
         border-top: $borderWidth solid $blue;
+        margin-bottom: 25px;
     }
 
     // Card
@@ -144,6 +145,11 @@ article {
         h3 {
             width: 600px;
             font-size: 16px;
+        }
+
+        // Fourth card
+        .calculator {
+            margin-bottom: initial;
         }
 
         // Card
