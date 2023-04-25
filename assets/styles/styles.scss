@@ -1,0 +1,131 @@
+// Variables
+$borderWidth: 3px;
+// Colors
+// Primary
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+// Neutral
+$veryDarkBlue: hsl(234, 12%, 34%);
+$grayishBlue: hsl(229, 6%, 66%);
+$veryLightGray: hsl(0, 0%, 98%);
+
+* {
+    box-sizing: border-box;
+}
+
+// Reset CSS
+body,
+html {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+article {
+    margin: 0;
+    padding: 0;
+}
+
+// MOBILE
+.main {
+    margin-top: 90px;
+    padding: 0 20px;
+
+    h1 {
+        text-align: center;
+        font-weight: 200;
+        font-size: 23px;
+        color: $veryDarkBlue;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 23px;
+        color: $veryDarkBlue;
+    }
+
+    h3 {
+        margin-top: 15px;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        color: $grayishBlue;
+    }
+}
+
+// Cards wrapper
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+
+    // Middle cards wrapper
+    // &__middle {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+}
+
+// Cards border color
+.supervisor {
+    border-top: $borderWidth solid $cyan;
+}
+
+.teambuilder {
+    border-top: $borderWidth solid $red;
+}
+
+.karma {
+    border-top: $borderWidth solid $orange;
+}
+
+.calculator {
+    border-top: $borderWidth solid $blue;
+}
+
+// Card
+.card {
+    position: relative;
+    height: 220px;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px $grayishBlue;
+
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+        color: $veryDarkBlue;
+    }
+
+    &__text {
+        margin-top: 3px;
+        font-size: 13px;
+        color: $grayishBlue;
+    }
+
+    &__img {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: 58px;
+        height: 58px;
+    }
+}
+
+// DESKTOP
+@media screen and (min-width: 1440px) {}
